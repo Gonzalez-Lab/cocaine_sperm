@@ -1,0 +1,21 @@
+chr;start;end;Dir.Methy;chr;hotspot;gene.element;TE.class;gene;diff.Methy
+3;58061709;58061821;hypo;chr3;lncRNA;intron;;Gm2668;0.703
+5;91885848;91885899;hypo;chr5;hybrid;exon  ;LINE;Trmt112-ps1;0.302
+7;25554115;25554218;hypo;chr7;transposon;;LTR;;0.413
+12;31582371;31582451;hypo;chr12;hybrid;intron;LINE;Slc26a4;0.597
+1;36352758;36352908;hyper;chr1;hybrid;intron;LINE;Arid5a;0.447
+4;137286188;137286258;hyper;chr4;genic;exon - intron;;Hspg2;0.223
+5;136089050;136089108;hyper;chr5;genic;exon - intron;;Upk3bl;0.345
+5;150418173;150418301;hyper;chr5;genic;intron-promoter;;Fry;0.402
+6;23091129;23091274;hyper;chr6;hybrid;exon - intron;LTR;Aass;0.351
+7;97828406;97828470;hyper;chr7;hybrid;promoter - intron;SINE;Capn5;0.39
+8;120740695;120740821;hyper;chr8;genic;exon - intron;;Galnt2l - Crispld2;0.445
+8;126201648;126201826;hyper;chr8;hybrid;exon - intron;LTR;Sipa1l2;0.459
+10;76776978;76777065;hyper;chr10;genic;intron;;Pcbp3;0.435
+11;117096427;117096552;hyper;chr11;genic;intron;;Septin9;0.416
+14;54985640;54985703;hyper;chr14;genic;intron;;Slc7a8;0.336
+14;65623214;65623407;hyper;chr14;genic;intron;;Zfp395;0.561
+14;68747267;68747330;hyper;chr14;hybrid;exon - intron;SINE-LTR;Adam7;0.381
+16;76154074;76154199;hyper;chr16;genic;intron;;Nrip1;0.462
+17;80562899;80562982;hyper;chr17;hybrid;exon - intron;LTR;Dhx57;0.393
+17;84464700;84464760;hyper;chr17;lncRNA;promoter;;Gm19696;0.341

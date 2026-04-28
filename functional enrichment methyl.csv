@@ -1,0 +1,17 @@
+Term;P-value;Adjusted p-value;Odds Ratio;Combined score;Ngenes;genes
+Nuclear Retinoic Acid Receptor Binding (GO:0042974);0.0001280;0.006530;147.89;1325.55;2;Nrip1,Arid5a
+Nuclear Receptor Binding (GO:0016922);0.005919;0.03906;19.36;99.32;2;Nrip1,Arid5a
+Nuclear Retinoid X Receptor Binding (GO:0046965);0.009957;0.03906;116.79;538.34;1;Nrip1
+Nuclear Glucocorticoid Receptor Binding (GO:0035259);0.006980;0.03906;175.21;869.87;1;Nrip1
+Chloride:Bicarbonate Antiporter Activity (GO:0140900);0.009957;0.03906;116.79;538.34;1;Slc26a4
+Bicarbonate:Monoatomic Anion Antiporter Activity (GO:0140829);0.008966;0.03906;131.39;619.44;1;Slc26a4
+Oxalate Transmembrane Transporter Activity (GO:0019531);0.007973;0.03906;150.17;725.58;1;Slc26a4
+Iodide Transmembrane Transporter Activity (GO:0015111);0.004990;0.03906;262.84;1393.12;1;Slc26a4
+Sulfate Transmembrane Transporter Activity (GO:0015116);0.01095;0.03988;105.11;474.51;1;Slc26a4
+Glycine Transmembrane Transporter Activity (GO:0015187);0.008966;0.03906;131.39;619.44;1;Slc7a8
+Branched-Chain Amino Acid Transmembrane Transporter Activity (GO:0015658);0.008966;0.03906;131.39;619.44;1;Slc7a8
+L-alanine Transmembrane Transporter Activity (GO:0015180);0.007973;0.03906;150.17;725.58;1;Slc7a8
+Thyroid Hormone Transmembrane Transporter Activity (GO:0015349);0.006980;0.03906;175.21;869.87;1;Slc7a8
+L-leucine Transmembrane Transporter Activity (GO:0015190);0.004990;0.03906;262.84;1393.12;1;Slc7a8
+Alanine Transmembrane Transporter Activity (GO:0022858);0.01391;0.04435;80.84;345.57;1;Slc7a8
+Calcium-Dependent Cysteine-Type Endopeptidase Activity (GO:0004198);0.01391;0.04435;80.84;345.5;1;Capn5

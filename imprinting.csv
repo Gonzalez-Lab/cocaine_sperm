@@ -1,0 +1,64 @@
+Gene;Aliases;Location;Status;Expressed Allele
+Zdbf2;4930431J08Rik, 9330107J05Rik, RP23-434D24.2 ;1 ;Imprinted;Paternal
+Adam23;MDC3 ;1 32.31 cM ;Imprinted;Paternal
+Mcts2;PSIMCT-1, RP23-35I8.12, 2400002F11Rik ;2 ;Imprinted;Paternal
+Mir296;Mirn296, mmu-mir-296 ;2 AS ;Imprinted;Paternal
+Mir298;Mirn298, mmu-mir-298 ;2 AS ;Imprinted;Paternal
+Sfmbt2;D2Wsu23e, D330030P06Rik ;2 6.0 cM ;Imprinted;Paternal
+Nnat;Peg5, AW107673, 5730414I02Rik ;2 88.0 cM ;Imprinted;Paternal
+Zfp64;Gm38422 ;2 88.99 cM AS ;Imprinted;Paternal
+Nespas;Gnas-as ;2 104.0 cM AS ;Imprinted;Paternal
+Jade1;Phf1, Phf17, AU041499, mKIAA1807, D530048A03Rik ;3 ;Imprinted;Paternal
+Magi2;AIP-1, Acvri1, Magi-2, S-SCAM, Acvrip1, Acvrinp1, mKIAA0705 ;5 ;Imprinted;Paternal
+Fkbp6;36kDa, FKBP-6, FKBP-36, AU017274, D5Ertd724, D5Ertd724e, 1700008G22Rik ;5 75.11 cM AS ;Imprinted;Paternal
+Peg10;Edr, HB-1, Mar2, MEF3L, Mart2, MyEF-3, AA407948 ;6 0.5 cM ;Imprinted;Paternal
+Sgce;e-SG ;6 1.0 cM AS ;Imprinted;Paternal
+Mest;Peg1, AA408879, AI256745 ;6 7.5 cM ;Imprinted;Paternal
+Nap1l5;1110020M21Rik ;6 C1 AS ;Imprinted;Paternal
+Peg3os;Apeg3, Peg3as ;7 3.89 cM ;Imprinted;Paternal
+Usp29;Ocat ;7 6.5 cM ;Imprinted;Paternal
+Peg3;Pw1, End4, Gcap4, Zfp102, AL022617, mKIAA0287 ;7 6.5 cM AS ;Imprinted;Paternal
+Zfp264;;7 7.0 cM ;Imprinted;Paternal
+Peg12;Frat3 ;7 28.0 cM AS ;Imprinted;Paternal
+Magel2;ns7, nM15, NDNL1, Mage-l2 ;7 28.0 cM ;Imprinted;Paternal
+Ndn;Peg6, AI528698 ;7 28.0 cM ;Imprinted;Paternal
+Mkrn3;Zfp127, D7H15S9-1 ;7 29.0 cM AS ;Imprinted;Paternal
+Snrpn;SMN, Peg4, HCERN3, MGC18604, MGC30325, 2410045I01Rik ;7 29.0 cM AS ;Imprinted;Paternal
+Pwcr1;snoRNA MBII-85 ;7 29.0 cM AS ;Imprinted;Paternal
+Igf2as;;7 69.09 cM ;Imprinted;Paternal
+Ins2;Mody, Ins-2, Mody4, AA986540, proinsulin, INS ;7 69.1 cM AS ;Imprinted;Paternal
+Kcnq1ot1;Lit1, Kvlqt1-as, antisense transcript of Kvlqt1 ;7 69.3 cM ;Imprinted;Paternal
+Inpp5f;SAC2, cI-27, hSAC2, mKIAA0966, 5830435P03Rik ;7 70.32 cM ;Imprinted;Paternal
+Nctc1;Rhit1, 9530074L01 ;7 87.96 cM AS ;Imprinted;Paternal
+Igf2;M, M6, Igf, Mpr, Peg, Igf-, M6pr, Peg2, Igf-2, Igf-II, AL033362 ;7 87.99 cM AS ;Imprinted;Paternal
+Snurf;Snrpn, MGC18604, MGC30325, 2410045I01Rik ;7 B5 AS ;Imprinted;Paternal
+Gab1;AA408973, AW107238 ;8 AS ;Imprinted;Paternal
+Sall1;Msal-3 ;8 43.51 cM AS ;Imprinted;Paternal
+Cdh15;Mca, Mcad, Cdh14, AI323380 ;8 71.99 cM ;Imprinted;Paternal
+Snx14;YR-14, B830022K16, C330035N22Rik ;9 AS ;Imprinted;Paternal
+Mir184;Mirn184, mir-184, mmu-mir-184 ;9 47.25 cM AS ;Imprinted;Paternal
+Rasgrf1;Grf, Gnrp, Grf1, p190, CDC25, Grfbe, P190-A, CDC25Mm, Grfbeta, AI844718, Ras-GRF1, p190RhoGEF ;9 47.31 cM ;Imprinted;Paternal
+Hymai;;10 ;Imprinted;Paternal
+Plagl1;Lot1, Zac1 ;10 15.0 cM ;Imprinted;Paternal
+Platr20;5133400J02Rik ;11 AS ;Imprinted;Paternal
+Ddc;Aadc ;11 7.0 cM AS ;Imprinted;Paternal
+U2af1-rs1;SP2, 35kDa, Irlgs2, D11Ncvs75, U2afbp-rs ;11 12.0 cM ;Imprinted;Paternal
+Ccdc40;B930008I02Rik ;11 83.35 cM ;Imprinted;Paternal
+Smoc1;S, SRG, AI848508, 2600002F22Rik ;12 ;Imprinted;Paternal
+Dlk1;FA1, ZOG, pG2, Peg9, SCP1, Ly107, pref-1, AW742678 ;12 54.0 cM ;Imprinted;Paternal
+Dio3;MGC124117, MGC124118 ;12 F1 ;Imprinted;Paternal
+Rtl1;Mar, Mor1, Mart1, 6430411K18Rik ;12 F1 AS ;Imprinted;Paternal
+Galnt6;GalNA, AW047994, GalNAc-T6, 4632410F13 ;15 AS ;Imprinted;Paternal
+Peg13;;15 AS ;Imprinted;Paternal
+Slc38a4;At, SN, Ata3, SNAT4, mATA3, mNAT3, 1110012E16Rik, 1700012A18Rik ;15 AS ;Imprinted;Paternal
+Air;B930018I07Rik ;17 7.36 cM ;Imprinted;Paternal
+Impact;E430016J11Rik ;18 A2-B2 ;Imprinted;Paternal
+Fthl17b;Gm5634, EG434726, Fthl17L1 ;X AS ;Imprinted;Paternal
+Fthl17c;Gm14511, EG434727, Fthl17L2 ;X AS ;Imprinted;Paternal
+Fthl17d;Gm14458, Fthl17L3 ;X AS ;Imprinted;Paternal
+Fthl17e;Fthl1, Fthl17 ;X ;Imprinted;Paternal
+Fthl17f;Gm5635, EG434729, Fthl17L5 ;X ;Imprinted;Paternal
+Fthl17a;AI324104, 1600014K23Rik ;X ;Imprinted;Paternal
+Jpx;Enox, 2010000I03Rik, 2510040I06Rik ;X 46.17 cM ;Imprinted;Paternal
+Ftx;Thcytx, BB219131, NCRNA00182, B230206F22Rik ;X 46.21 cM AS ;Imprinted;Paternal
+Xist;A430022B11 ;X D AS ;Imprinted;Paternal
