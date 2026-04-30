@@ -1,3 +1,3 @@
 # cocaine_sperm
 
-Download the code and zip file and copy them into the R project folder.
+clone the repo and run the scripts to reproduce the analysis. 
