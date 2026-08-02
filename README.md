@@ -1,71 +1,124 @@
-Cocaine-induced epigenetic remodeling of mouse sperm
+# 🧬 Cocaine-induced epigenetic remodeling of mouse sperm
 
-This repository contains the analysis scripts used in the manuscript:
+Repository containing the bioinformatic analyses used in the manuscript:
 
-"Cocaine reshapes the sperm epigenome through coordinated DNA methylation and long RNA cargo remodeling in mice"
-"Paternal cocaine exposure is associated with DNA methylation changes at regulatory genomic regions and altered sperm long RNA cargo"
+> **Cocaine reshapes the sperm epigenome through coordinated DNA methylation and RNA remodeling in mice**
 
-The repository includes all custom R scripts used for the analyses presented in the manuscript, including:
+---
 
-RRBS hotspot annotation
-Histone ChIP-seq integration
-Transcription factor motif analysis
-RNA-seq differential expression analysis
-Figure generation
-Supplementary analyses
-Data availability
+# 📂 Repository contents
 
-The complete sequencing datasets have been deposited in the NCBI Gene Expression Omnibus (GEO):
-RRBS: GSE341998
-RNA-seq: GSE341997
+This repository contains all custom scripts used to generate the analyses presented in the manuscript.
 
-Required external files
-Some analyses require files that are not included in this repository because of their large size.
+## Included analyses
 
-RRBS CX reports
+- 🧬 RRBS hotspot analysis
+- 🎯 Transcription factor motif enrichment
+- 🧪 Histone ChIP-seq integration
+- 📈 RNA-seq differential expression analysis
+- 📊 Figure generation
+- 📑 Supplementary analyses
 
-The scripts:
-  TF_analysis.R
-  TE_enrichment.R
+---
 
-require the original Bismark *_CX_report.txt.gz files generated during the RRBS analysis.
+# 💾 Sequencing data
 
-These files are available as part of the RRBS GEO submission (GSE341998).
+The raw sequencing datasets are available in the NCBI Gene Expression Omnibus (GEO).
 
-Download the corresponding CX_report files from GEO and place them in the working directory before running these scripts.
+| Dataset | GEO accession |
+|---------|---------------|
+| RRBS | **GSE341998** |
+| RNA-seq | **GSE341997** |
 
-Histone ChIP-seq data
+---
 
-The script:
-  Histone_analysis.R
+# ⚠ Required external files
 
-requires the processed BigWig files containing sperm histone ChIP-seq signal.
+Some files are not included in this repository because of their size.
 
-These files should be downloaded from the original GEO study: GSE79227
+## 🧬 RRBS CX reports
 
-The required BigWig files should be placed inside the folder: histone data/
+The following scripts require the original Bismark **CX_report** files:
 
-before running the analysis.
+- `TF_analysis.R`
+- `TE_enrichment.R`
 
-Software
+Download the corresponding
 
-Analyses were performed using:
+```
+*_CX_report.txt.gz
+```
 
-R 4.5.1
-Bioconductor
-GenomicRanges
-rtracklayer
-motifmatchr
-JASPAR2024
-DESeq2
-pheatmap
-EnhancedVolcano
-tidyverse
+files from
 
-Additional package dependencies are listed within each script.
+**GEO: GSE341998**
 
-Reproducibility
+and place them in the working directory before running these analyses.
 
-All scripts were developed using the GRCm39/mm39 mouse genome assembly.
+---
+
+## 🧪 Histone ChIP-seq data
+
+The histone analysis requires processed **BigWig** files from:
+
+**GEO: GSE79227**
+
+Place the downloaded files inside
+
+```text
+histone data/
+```
+
+before running
+
+```
+Histone_analysis.R
+```
+
+---
+
+# 💻 Software
+
+Analyses were performed using
+
+- R 4.5.1
+- Bioconductor
+- DESeq2
+- GenomicRanges
+- rtracklayer
+- motifmatchr
+- JASPAR2024
+- tidyverse
+- pheatmap
+- EnhancedVolcano
+
+---
+
+# 🔬 Genome assembly
+
+All analyses were performed using
+
+**GRCm39 / mm39**
+
+---
+
+# 📜 Citation
+
+If you use these scripts, please cite:
+
+> Gonzalez *et al.*  
+> *Cocaine reshapes the sperm epigenome through coordinated DNA methylation and RNA remodeling in mice*
+
+---
+
+# 📧 Contact
+
+**Betina Gonzalez**
+
+Laboratory of Epigenetics and Functional Genomics
+
+Instituto Tecnológico de Buenos Aires (ITBA)
+
+Argentina
 
 <img width="672" height="480" alt="fractal-large" src="https://github.com/user-attachments/assets/fc21c83d-6d40-4465-851a-c80312ebd654" />
