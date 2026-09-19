@@ -8,13 +8,13 @@ Repository containing the bioinformatic analyses used in the manuscript:
 
 # 📂 Repository contents
 
-This repository contains all custom scripts used to generate the analyses presented in the manuscript.
+This repository contains the custom scripts and input files used to generate the analyses presented in the manuscript.
 
 ## Included analyses
 
 - 🧬 RRBS hotspot analysis
-- 🎯 Transcription factor motif enrichment
-- 🧪 Histone ChIP-seq integration
+- 🎯 Transcription factor motif analysis
+- 🧪 Histone ChIP-seq integration and genomic background randomization
 - 📈 RNA-seq differential expression analysis
 - 📊 Figure generation
 - 📑 Supplementary analyses
@@ -23,68 +23,84 @@ This repository contains all custom scripts used to generate the analyses presen
 
 # 💾 Sequencing data
 
-The raw sequencing datasets are available in the NCBI Gene Expression Omnibus (GEO).
+The raw sequencing datasets generated in this study are available in the NCBI Gene Expression Omnibus (GEO).
 
 | Dataset | GEO accession |
-|---------|---------------|
+| --- | --- |
 | RRBS | **GSE341998** |
 | RNA-seq | **GSE341997** |
 
 ---
 
-# ⚠ Required external files
+# 📁 Required input files
 
-Some files are not included in this repository because of their size.
+## Cocaine-associated DMRs
+
+`hotspots.csv` contains the genomic coordinates and annotations of the 24
+cocaine-associated sperm DMRs analyzed in the manuscript and corresponds to
+the regions reported in Table S1.
+
+This file is included in the repository and is used as input by analyses
+requiring the DMR coordinates, including the histone ChIP-seq analysis.
+
+---
 
 ## 🧬 RRBS CX reports
 
-The following scripts require the original Bismark **CX_report** files:
+The transcription factor motif analysis requires the original Bismark
+`CX_report` files.
 
-- `TF_analysis.R`
-- `TE_enrichment.R`
+Download the corresponding:
 
-Download the corresponding
-
-```
 *_CX_report.txt.gz
-```
 
-files from
-
-**GEO: GSE341998**
-
-and place them in the working directory before running these analyses.
+files from **GEO: GSE341998** and place them in the working directory before
+running the analysis.
 
 ---
 
 ## 🧪 Histone ChIP-seq data
 
-The histone analysis requires processed **BigWig** files from:
+The histone analysis uses publicly available sperm histone ChIP-seq signal
+tracks from **GEO: GSE79227**.
 
-**GEO: GSE79227**
+The analysis includes the following seven histone modifications:
 
-Place the downloaded files inside
+- H3K9ac
+- H3K27ac
+- H3K4me1
+- H3K4me3
+- H3K36me3
+- H3K27me3
+- H3K9me3
 
-```text
+Two replicate WIG tracks are analyzed for each histone modification.
+
+Place the downloaded WIG files inside:
+
 histone data/
-```
 
-before running
+before running:
 
-```
 Histone_analysis.R
-```
+
+The histone analysis compares continuous ChIP-seq signal across the 24
+cocaine-associated DMRs with 10,000 sets of length-matched random genomic
+regions. The 75th percentile of the independent genomic background is used
+only to generate the descriptive binary heatmap of high relative histone
+ChIP-seq signal.
 
 ---
 
 # 💻 Software
 
-Analyses were performed using
+Analyses were performed using:
 
 - R 4.5.1
 - Bioconductor
 - DESeq2
 - GenomicRanges
+- GenomeInfoDb
 - rtracklayer
 - motifmatchr
 - JASPAR2024
@@ -94,11 +110,18 @@ Analyses were performed using
 
 ---
 
-# 🔬 Genome assembly
+# 🔬 Genome assemblies
 
-All analyses were performed using
+The cocaine-associated DMRs and primary RRBS analyses use the
+**GRCm39/mm39** mouse genome assembly.
 
-**GRCm39 / mm39**
+Public sperm histone ChIP-seq tracks from GSE79227 are provided in **mm9**.
+For the histone analysis, DMRs and random genomic regions are converted from
+mm39 to mm9 using liftOver. Only uniquely mapped regions on standard
+chromosomes that preserve the original region length are retained.
+
+Genome assembly conversions are therefore performed explicitly within the
+histone-analysis pipeline.
 
 ---
 
@@ -115,10 +138,6 @@ If you use these scripts, please cite:
 
 **Betina Gonzalez**
 
-Laboratory of Epigenetics and Functional Genomics
-
-Instituto Tecnológico de Buenos Aires (ITBA)
-
+Laboratory of Epigenetics and Functional Genomics  
+Instituto Tecnológico de Buenos Aires (ITBA)  
 Argentina
-
-<img width="672" height="480" alt="fractal-large" src="https://github.com/user-attachments/assets/fc21c83d-6d40-4465-851a-c80312ebd654" />
