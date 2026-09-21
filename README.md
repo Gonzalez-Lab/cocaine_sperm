@@ -137,6 +137,10 @@ not used for statistical inference.
 All statistical inference is based on the continuous ChIP-seq signal and the
 empirical randomization analyses described above.
 
+The descriptive heatmap shown in Figure 1D is generated from the genome-wide analysis 
+using the 75th percentile of the independent genome-wide background. The RRBS-restricted analysis 
+is used exclusively as a sensitivity analysis of the continuous ChIP-seq signal.
+
 ---
 
 # 💻 Software
