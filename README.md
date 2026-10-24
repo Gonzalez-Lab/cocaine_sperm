@@ -15,7 +15,6 @@ This repository contains the custom scripts and input files used to generate the
 - 🧬 RRBS hotspot analysis
 - 🎯 Transcription factor motif analysis
 - 🧪 Histone ChIP-seq integration
-- 🎲 Genome-wide and RRBS-restricted histone randomization analyses
 - 📈 RNA-seq differential expression analysis
 - 📊 Figure generation
 - 📑 Supplementary analyses
@@ -87,60 +86,6 @@ before running the histone-analysis scripts.
 
 ---
 
-# 🧪 Histone ChIP-seq randomization analyses
-
-Histone-modification ChIP-seq signal across the 24 cocaine-associated DMRs is
-evaluated using two complementary empirical background models.
-
-## Genome-wide background
-
-The primary randomization analysis compares the continuous ChIP-seq signal
-observed across the 24 DMRs with 10,000 independent random genomic sets.
-
-Each random set contains 24 genomic regions matched exactly to the lengths of
-the observed DMRs. Cocaine-associated DMRs themselves are excluded from the
-background.
-
-For each histone modification, the mean `log2(signal + 1)` across the 24 DMRs
-is compared with the empirical distribution of the same statistic obtained
-from the 10,000 random genomic sets.
-
-An omnibus test is additionally performed across the seven histone
-modifications. The statistic for each modification is standardized relative
-to its own empirical random distribution, and the seven resulting Z scores
-are averaged to obtain a global statistic. The same random genomic set is
-retained across all seven histone modifications when constructing each global
-null statistic, preserving the dependence among histone signals.
-
-## RRBS-restricted background
-
-A complementary sensitivity analysis repeats the same ChIP-seq signal
-quantification and statistical framework using random regions sampled from
-the genomic space represented by RRBS.
-
-This analysis provides a more conditional null model by asking whether the
-histone-modification signal observed across the cocaine-associated DMRs is
-elevated relative to regions accessible to the methylation assay.
-
-The genome-wide and RRBS-restricted analyses therefore address related but
-distinct null hypotheses.
-
-## Descriptive histone-signal heatmap
-
-For visualization, high relative histone ChIP-seq signal is defined using the
-75th percentile of the independent genome-wide background distribution for
-each histone modification.
-
-This binary classification is used only for the descriptive heatmap and is
-not used for statistical inference.
-
-All statistical inference is based on the continuous ChIP-seq signal and the
-empirical randomization analyses described above.
-
-The descriptive heatmap shown in Figure 1D is generated from the genome-wide analysis 
-using the 75th percentile of the independent genome-wide background. The RRBS-restricted analysis 
-is used exclusively as a sensitivity analysis of the continuous ChIP-seq signal.
-
 ---
 
 # 💻 Software
@@ -176,27 +121,5 @@ genome-wide randomization procedure.
 Genome assembly conversions are therefore performed explicitly within the
 histone-analysis pipeline.
 
----
-
-# ♻️ Reproducibility
-
-Random seeds are fixed in the randomization analyses to ensure reproducible
-generation of empirical background distributions.
-
-Intermediate histone-signal calculations can be stored as RDS cache files so
-that the WIG tracks do not need to be re-imported when rerunning downstream
-statistical analyses.
-
-The repository contains separate scripts for the genome-wide and
-RRBS-restricted histone randomization analyses.
-
----
-
-
-# 📧 Contact
-
-**Betina Gonzalez**
-
-Laboratory of Epigenetics and Functional Genomics  
-Instituto Tecnológico de Buenos Aires (ITBA)  
+---uto Tecnológico de Buenos Aires (ITBA)  
 Argentina
